@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Scheherazade+New:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Scheherazade+New:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -18,7 +19,7 @@ html, body {
 body {
   background: #0a0614;
   color: #fef9e0;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* Custom scrollbar */
@@ -52,14 +53,7 @@ body {
 
 /* Shimmer text effect */
 .shimmer-text {
-  background: linear-gradient(
-    90deg,
-    #f5c842 0%,
-    #fdeea0 25%,
-    #f5c842 50%,
-    #fce96a 75%,
-    #f5c842 100%
-  );
+  background: linear-gradient(90deg, #f5c842 0%, #fdeea0 25%, #f5c842 50%, #fce96a 75%, #f5c842 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -76,7 +70,7 @@ body {
 
 .ornament-line::before,
 .ornament-line::after {
-  content: '';
+  content: "";
   flex: 1;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(245, 200, 66, 0.6), transparent);
@@ -123,20 +117,21 @@ body {
 /* Name input styling */
 .name-input {
   background: rgba(245, 200, 66, 0.08);
-  border: 1px solid rgba(245, 200, 66, 0.3);
+  border: none;
   border-radius: 8px;
   color: #fdeea0;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
   padding: 0.6rem 1.2rem;
   outline: none;
   transition: all 0.3s ease;
-  text-align: center;
+  text-align: center !important;
+  direction: ltr;
+  unicode-bidi: normal;
   width: 220px;
 }
 
 .name-input:focus {
-  border-color: rgba(245, 200, 66, 0.8);
   box-shadow: 0 0 20px rgba(245, 200, 66, 0.15);
 }
 
